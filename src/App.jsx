@@ -206,7 +206,7 @@ export default function App() {
 */
 
   const handleMouseDown = (e) => {
-    const note = e.target.dataset.key;
+    const note = e.target.dataset.note;
     if (!note) return;
 
     setSynthKeys((prev) =>
@@ -215,7 +215,7 @@ export default function App() {
   };
 
   const handleMouseUp = (e) => {
-    const note = e.target.dataset.key;
+    const note = e.target.dataset.note;
     if (!note) return;
 
     setSynthKeys((prev) =>
